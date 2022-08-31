@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "chittooangularproj": {
+      "hosting": {
+        "chittooApp": [
+          "chittooangularproj"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "chittooangularproj"
+  }
+}

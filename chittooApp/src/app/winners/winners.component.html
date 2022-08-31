@@ -1,0 +1,26 @@
+<div class="bg-container">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
+    
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef>Name</th>
+          <td mat-cell *matCellDef="let element" style="width: 30%;">{{element.username}}</td>
+        </ng-container>
+        
+        <ng-container matColumnDef="age">
+            <th mat-header-cell *matHeaderCellDef>Age</th>
+            <td mat-cell *matCellDef="let element" style="width: 30%;">{{element.age}}</td>
+        </ng-container>
+      
+        <ng-container matColumnDef="score">
+            <th mat-header-cell *matHeaderCellDef>Score</th>
+            <td mat-cell *matCellDef="let element" style="width: 5%;">{{element.score}}</td>
+        </ng-container>  
+        
+      
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr
+            mat-row
+            *matRowDef="let row; columns: displayedColumns;"
+        ></tr>
+      </table>
+</div>
